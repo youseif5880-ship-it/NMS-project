@@ -1,0 +1,301 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=1200" />
+  <title>Orange Knowledge Base — Demo</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <!-- PAGE 1 (List) -->
+  <main id="page1" class="page">
+    <header class="topbar">
+      <nav class="nav">
+        <ul>
+          <li><a href="#">Home</a></li>
+          <li><a href="#">Apps</a></li>
+          <li><a href="#">Team</a></li>
+          <li><a href="#">Vendors</a></li>
+          <li><a href="#">Databases</a></li>
+          <li><a href="#">Backups</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <div class="wrap">
+      <section class="hero">
+        <div class="kb-title">Orange Knowledge Base</div>
+
+        <!-- inline simple "logo" square like the screenshot -->
+        <div class="logo-square" aria-hidden="true">
+          <img src="images/Orange logo.png" alt="Orange Logo">
+        </div>
+
+        <div class="controls">
+          <button id="addBtn" class="btn-add" title="Add new article">
+            <span class="plus">+</span> Add
+          </button>
+
+          <div class="search-wrap">
+            <input id="search" placeholder="Search" class="search" />
+          </div>
+        </div>
+      </section>
+
+      <!-- cards grid -->
+    <div class="cards-grid">
+
+      <article class="card">
+        <div class="card-image">
+          <img src="images/Image 1.jpg" alt="Card Image" class="card-img">
+          <span class="card-badge">App Name</span>
+        </div>
+        <div class="card-body">
+          <h3 class="card-title">UX review presentations</h3>
+          <p class="card-excerpt">How do you create compelling presentations that make your audience act?</p>
+          <div class="card-meta">
+            <div class="author">
+              <img src="images/Avatar 1.png" alt="Author Photo" class="avatar-img">
+              <div class="author-info">
+                <div class="author-name">Olivia Rhye</div>
+                <div class="date">7 Jan 2020</div>
+              </div>
+            </div>
+            <div class="goto">›</div>
+          </div>
+        </div>
+      </article>
+
+        <!-- copy several cards to emulate screenshot layout -->
+        <article class="card">
+          <div class="card-image">
+            <img src="images/Image 2.jpg" alt="Card Image" class="card-img">
+            <span class="card-badge">App Name</span>
+          </div>
+          <div class="card-body">
+            <h3 class="card-title">Migrating to Linear 101</h3>
+            <p class="card-excerpt">Learn how to migrate your projects, tickets, and workflows to Linear.</p>
+            <div class="card-meta">
+              <div class="author">
+                <img src="images/Avatar 2.png" alt="Author Photo" class="avatar-img">
+                <div class="author-info">
+                  <div class="author-name">Phoenix Baker</div>
+                  <div class="date">20 Jan 2021</div>
+                </div>
+              </div>
+              <div class="goto">›</div>
+            </div>
+          </div>
+        </article>
+
+        <article class="card">
+          <div class="card-image">
+            <img src="images/Image 3.jpg" alt="Card Image" class="card-img">
+            <span class="card-badge">App Name</span>
+          </div>
+          <div class="card-body">
+            <h3 class="card-title">Building your API Stack</h3>
+            <p class="card-excerpt">The best approach to designing and documenting your API endpoints.</p>
+            <div class="card-meta">
+              <div class="author">
+                <img src="images/Avatar 3.png" alt="Author Photo" class="avatar-img">
+                <div class="author-info">
+                  <div class="author-name">Lana Steiner</div>
+                  <div class="date">12 Sep 2020</div>
+                </div>
+              </div>
+              <div class="goto">›</div>
+            </div>
+          </div>
+        </article>
+
+        <!-- more cards to match visual density... -->
+        <article class="card">
+          <div class="card-image">
+            <img src="images/Image 4.jpg  " alt="Card Image" class="card-img">
+            <span class="card-badge">App Name</span>
+          </div>
+          <div class="card-body">
+            <h3 class="card-title">Bill Walsh leadership lessons</h3>
+            <p class="card-excerpt">Leadership lessons that translate to product and engineering teams.</p>
+            <div class="card-meta">
+              <div class="author">
+                <img src="images/Avatar 4.png" alt="Author Photo" class="avatar-img">
+                <div class="author-info">
+                  <div class="author-name">Alec Whitten</div>
+                  <div class="date">2 Mar 2020</div>
+                </div>
+              </div>
+              <div class="goto">›</div>
+            </div>
+          </div>
+        </article>
+
+        <article class="card">
+          <div class="card-image">
+            <img src="images/Image 5.jpg" alt="Card Image" class="card-img">
+            <span class="card-badge">App Name</span>
+          </div>
+          <div class="card-body">
+            <h3 class="card-title">PM mental models</h3>
+            <p class="card-excerpt">Models & mental shortcuts for product managers and teams.</p>
+            <div class="card-meta">
+              <div class="author">
+                <img src="images/Avatar 5.png" alt="Author Photo" class="avatar-img">
+                <div class="author-info">
+                  <div class="author-name">Demi Wilkinson</div>
+                  <div class="date">18 Jul 2021</div>
+                </div>
+              </div>
+              <div class="goto">›</div>
+            </div>
+          </div>
+        </article>
+        
+
+        <article class="card">
+          <div class="card-image">
+            <img src="images/Image 6.jpg" alt="Card Image" class="card-img">
+            <span class="card-badge">App Name</span>
+          </div>
+          <div class="card-body">
+            <h3 class="card-title">What is Wireframing?</h3>
+            <p class="card-excerpt">A short guide to wireframing and rapid prototyping.</p>
+            <div class="card-meta">
+              <div class="author">
+                <img src="images/Avatar 6.png" alt="Author Photo" class="avatar-img">
+                <div class="author-info">
+                  <div class="author-name">Candice Wu</div>
+                  <div class="date">3 Apr 2019</div>
+                </div>
+              </div>
+              <div class="goto">›</div>
+            </div>
+          </div>
+        </article>
+
+      </section>
+    </div>
+      <div class="load-more-wrap">
+        <button class="btn-load">Load more</button>
+      </div>
+    </div>
+  </main>
+
+  <!-- PAGE 2 (Add / Form) -->
+  <main id="page2" class="page hidden">
+    <header class="topbar">
+      <nav class="nav">
+        <ul>
+         <li><a href="#">Home</a></li>
+          <li><a href="#">Apps</a></li>
+          <li><a href="#">Team</a></li>
+          <li><a href="#">Vendors</a></li>
+          <li><a href="#">Databases</a></li>
+          <li><a href="#">Backups</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <div class="wrap form-wrap">
+      <button id="backBtn" class="btn-back">← Back</button>
+
+      <!-- yellow banner with decorative hills and upload button on bottom-right -->
+      <div class="banner">
+        <svg class="hills" viewBox="0 0 1000 300" preserveAspectRatio="none" aria-hidden="true">
+          <rect width="100%" height="100%" fill="#ffdd6e"></rect>
+          <path d="M0 220 C200 120 350 260 500 230 C650 200 820 120 1000 200 L1000 300 L0 300 Z" fill="#ffb56b" />
+          <path d="M0 250 C180 200 340 260 500 250 C660 240 820 180 1000 240 L1000 300 L0 300 Z" fill="#ffd28f" opacity="0.9" />
+        </svg>
+
+        <div class="banner-upload">
+          <input id="bannerFile" type="file" hidden />
+          <label for="bannerFile" class="upload-btn"><span>Upload image</span> ⤓</label>
+        </div>
+      </div>
+
+      <!-- form -->
+      <form id="addForm" class="kb-form" onsubmit="event.preventDefault(); alert('Form submitted (demo)')">
+        <div class="row two">
+          <div class="field">
+            <label>Title</label>
+            <input id="title" type="text" />
+          </div>
+
+          <div class="field">
+            <label>Author</label>
+            <select id="author">
+              <option>Choose author</option>
+              <option>Chloe Rice</option>
+              <option>Lana Steiner</option>
+            </select>
+          </div>
+        </div>
+
+        <div class="row three">
+          <div class="field">
+            <label>Date</label>
+            <input type="date" />
+          </div>
+          <div class="field">
+            <label>Version</label>
+            <select><option>1.0</option><option>2.0</option></select>
+          </div>
+          <div class="field">
+            <label>App</label>
+            <select><option>App Name</option><option>Other</option></select>
+          </div>
+        </div>
+
+        <div class="row one">
+          <div class="field">
+            <label>Description</label>
+            <input type="text" placeholder="Short description" />
+          </div>
+        </div>
+
+        <div class="row one">
+          <div class="field">
+            <label>Knowledge</label>
+            <textarea id="knowledge" placeholder="Write your knowledge here..."></textarea>
+            <!-- small mock toolbar (visual only) -->
+            <div class="editor-toolbar">
+              <span>B</span><span>I</span><span>U</span><span>•</span><span>List</span>
+            </div>
+          </div>
+        </div>
+        <div class="row two bottom-actions">
+          <div></div>
+          <div class="field file-field">
+            <input id="fileUpload" type="file" hidden />
+            <label for="fileUpload" class="upload-btn">Upload File ⤓</label>
+          </div>
+        </div>
+
+        <div class="submit-row">
+          <button type="submit" class="btn-submit">Submit</button>
+        </div>
+      </form>
+    </div>
+
+    
+  </main>
+
+  
+  <div id="cardModal" class="modal">
+    <div class="modal-content">
+      <span class="close-btn">&times;</span>
+      <img class="article-image" src="" alt="">
+      <h2 class="modal-title"></h2>
+      <p class="modal-meta"></p>
+      <div class="modal-text">
+        Lorem ipsum dolor sit amet consectetur adipiscing elit. Quisque faucibus ex sapien vitae pellentesque sem placerat. In id cursus mi pretium tellus duis convallis. Tempus leo eu aenean sed diam urna tempor. Pulvinar vivamus fringilla lacus nec metus bibendum egestas. Iaculis massa nisl malesuada lacinia integer nunc posuere. Ut hendrerit semper vel class aptent taciti sociosqu. Ad litora torquent per conubia nostra inceptos himenaeos.<br><br>
+        Lorem ipsum dolor sit amet consectetur adipiscing elit. Quisque faucibus ex sapien vitae pellentesque sem placerat. In id cursus mi pretium tellus duis convallis. Tempus leo eu aenean sed diam urna tempor. Pulvinar vivamus fringilla lacus nec metus bibendum egestas. Iaculis massa nisl malesuada lacinia integer nunc posuere. Ut hendrerit semper vel class aptent taciti sociosqu. Ad litora torquent per conubia nostra inceptos himenaeos.<br><br>
+      </div>
+    </div>
+  </div>
+
+
+  <script src="script.js"></script>
+</body>
+</html>
